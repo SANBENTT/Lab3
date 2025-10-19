@@ -13,15 +13,15 @@
             android:icon="@drawable/perfil"
             android:title="@string/perfil" />
         <item
-            android:id="@+id/nav_inmuebles"
+            android:id="@+id/inmuebleFragment"
             android:icon="@drawable/inmobiliaria"
             android:title="@string/inmuebles" />
         <item
-            android:id="@+id/nav_Inquilinos"
+            android:id="@+id/inquilinosFragment"
             android:icon="@drawable/inquilinos"
             android:title="@string/inquilinos" />
         <item
-            android:id="@+id/nav_Contratos"
+            android:id="@+id/contratosFragment"
             android:icon="@drawable/contratos"
             android:title="@string/contratos" />
         <item

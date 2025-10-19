@@ -3,16 +3,24 @@ package com.example.lab3.request;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.lab3.modal.Inmueble;
+import com.example.lab3.modal.Propietario;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
+import retrofit2.http.Header;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 
 public class ApiClient {
     private static final String URLBASE = "https://inmobiliariaulp-amb5hwfqaraweyga.canadacentral-01.azurewebsites.net/";
@@ -61,6 +69,19 @@ public class ApiClient {
 
         @POST("api/Propietarios/login")
         Call<String> login(@Field("Usuario") String u, @Field("Clave") String c);
+
+        @GET("api/Propietarios")
+
+        Call<Propietario> obtenerPropietario(@Header("Authorization") String token);
+
+        @PUT("api/Propietarios/actualizar")
+
+        Call<Propietario> actualizarPropietario(@Header("Authorization") String token, @Body Propietario propietario);
+
+        @GET("api/Inmuebles")
+        Call<List<Inmueble>> obtenerInmuebles(@Header("Authorization") String token);
+
+
     }
 
 

@@ -14,6 +14,11 @@ retrofit = "3.0.0"
 converterGson = "3.0.0"
 converterScalars = "3.0.0"
 activity = "1.11.0"
+recyclerview = "1.4.0"
+legacySupportV4 = "1.0.0"
+glide = "4.16.0"
+playServices = "12.0.1"
+playServicesMaps = "19.2.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -30,6 +35,11 @@ retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = 
 converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converterGson" }
 converter-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "converterScalars" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+play-services = { group = "com.google.android.gms", name = "play-services", version.ref = "playServices" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
