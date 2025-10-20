@@ -51,6 +51,7 @@ dependencies {
     implementation("com.google.android.gms:play-services-location:21.0.1")
 
     implementation(libs.glide)
+    implementation(libs.legacy.support.v4)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
